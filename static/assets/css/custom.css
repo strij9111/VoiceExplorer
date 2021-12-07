@@ -1,0 +1,145 @@
+.dropzone {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  width: 200px;
+  min-height: 200px;
+  border: 7px dashed rgba(107, 167, 194, 0.51);
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+  margin-top:-50px;
+  padding: 20px; }
+  .dropzone-preview {
+    margin: 20px 0 0; }
+.circle {
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(107, 167, 194, 0.2);
+  position: relative;
+}
+.circle::after {
+  content: " ";
+  position: absolute;
+  display: block;
+  background-color: rgba(107, 167, 194, 0.9);
+  height: 10px;
+  margin-top: -5px;
+  top: 50%;
+  left: 5px;
+  right: 5px;
+  z-index: 9;
+}
+.circle::before {
+  content: " ";
+  position: absolute;
+  display: block;
+  background-color: rgba(107, 167, 194, 0.9);
+  width: 10px;
+  margin-left: -5px;
+  left: 50%;
+  top: 5px;
+  bottom: 5px;
+  z-index: 9;
+}
+.dz-clickable {
+  cursor: pointer; }
+
+.dz-started .dz-message {
+  display: none; }
+
+.dz-message {
+  position: absolute;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10; }
+  .dz-message > span {
+    color: #999999;
+    font-size: 1.0em;
+    text-align: center; }
+    .dz-message > span::before {
+      content: "";
+      position: relative;
+      display: block;
+      width: 64px;
+      height: 64px;
+      margin: 0 auto 10px;
+      background: url("../images/icon-upload.svg") 50% 50% no-repeat transparent;
+      background-size: contain; }
+
+.dz-preview {
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 5px; }
+
+.dz-image {
+  position: relative;
+  display: block;
+  width: 48px;
+  height: 48px;
+  background: url("../images/icon-file.svg") 50% 50% no-repeat transparent;
+  background-size: contain; }
+
+.dz-details {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  flex-grow: 1;
+  padding: 0 20px; }
+
+.dz-details-info {
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap; }
+
+.dz-filename {
+  position: relative;
+  display: block;
+  margin: 0 10px 0 0; }
+
+.dz-progress {
+  position: relative;
+  display: block;
+  width: 100%;
+  background-color: #fafafa;
+  margin: 5px 0; }
+
+.dz-upload {
+  position: relative;
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #48b0f7; }
+
+.dz-status-mark {
+  position: relative;
+  display: block;
+  width: 16px;
+  height: 16px;
+  visibility: hidden; }
+
+.dz-success .dz-status-mark {
+  background: url("../images/icon-success.svg") 50% 50% no-repeat transparent;
+  background-size: contain;
+  visibility: visible; }
+
+.dz-error .dz-status-mark {
+  background: url("../images/icon-error.svg") 50% 50% no-repeat transparent;
+  background-size: contain;
+  visibility: visible; }
+
+/*# sourceMappingURL=custom.css.map */
